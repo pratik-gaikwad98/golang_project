@@ -3,6 +3,8 @@ package interfaceandstruct
 func InterfaceProgram() {
 
 	//Print Rectangle and Cirecle area and paremter
-	CalculateAreaAndPerimeter()
-	SendNotifier()
+	// CalculateAreaAndPerimeter()
+	// SendNotifier()
+	// CallSpeakAnimal()
+	// DoPayment()
 }

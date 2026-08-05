@@ -2,15 +2,22 @@ package goroutinesandchannels
 
 /*
 
-Create a jobs channel.
-	Start 3 worker goroutines.
-	Each worker should:
-	receive a job from the channel,
-	print "Worker X processing Job Y"
-	sleep for 1 second,
-	continue until the channel is closed.
-	Send 10 jobs into the channel.
-	Use a sync.WaitGroup so main waits for all workers to finish instead of using time.Sleep().
+	5 worker goroutines.
+	50 URLs (just use strings like "url1", "url2").
+	Each worker:
+	Reads one URL.
+	Sleeps 500ms (simulate download).
+	Randomly fails 20% of the time.
+	Sends success/failure to a results channel.
+	Main should:
+	Count successful downloads.
+	Count failed downloads.
+	Print the final summary.
+Use:
+	WaitGroup
+	Channels
+	Worker Pool
+	Context (cancel after 10 seconds)
 
 */
 

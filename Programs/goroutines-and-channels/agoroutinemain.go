@@ -1,9 +1,12 @@
 package goroutinesandchannels
 
 func EnableGoroutine() {
-	RunGoroutine()
-
-	RunWorkers()
+	// RunGoroutine()
+	// RunWorkers()
+	// WorkerPoolBuffered()
+	// WorkerPoolUnBuffered()
+	// ProblemMain2()
+	ProblemMain4()
 }
 
 func RunGoroutine() {
